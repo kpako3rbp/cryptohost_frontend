@@ -1,0 +1,202 @@
+@import '@/styles/animation.scss';
+
+.promo {
+  // padding: 70px 0;
+  &Title {
+    font-size: 69px;
+    color: var(--white-color);
+    text-shadow: -2px -2px 0 var(--black-color),
+    2px -2px 0 var(--black-color),
+    -2px 2px 0 var(--black-color),
+    2px 2px 0 var(--black-color),
+    4px 4px 0 var(--black-color); /* Настоящая тень */
+
+
+  }
+
+  &Wrapper {
+    display: grid;
+    grid-template-columns: auto 570px;
+    gap: 60px;
+    align-items: center;
+  }
+
+  &ImageWrapper {
+    width: 570px;
+    height: 370px;
+    position: relative;
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &Ethereum {
+    z-index: 2;
+    position: absolute;
+    transition: 0s all;
+
+    height: 88px;
+    width: 88px;
+    left: 245px;
+    top: -30px;
+  }
+
+  &Bitcoin {
+    z-index: 2;
+    position: absolute;
+    transition: 0s all;
+
+    height: 107px;
+    width: 107px;
+    left: -35px;
+    bottom: -55px;
+    top: auto;
+  }
+
+  &X {
+    z-index: 2;
+    position: absolute;
+    transition: 0s all;
+
+    height: 47px;
+    width: 47px;
+    left: auto;
+    right: 5px;
+    top: auto;
+    bottom: -95px;
+  }
+
+  &Descr {
+    margin-top: var(--mt-30);
+    line-height: 30px;
+    width: 90%;
+    font-size: 19px;
+  }
+
+  &Button {
+    margin-top: var(--mt-45);
+  }
+}
+
+@media (max-width: 1200px) {
+  .promo {
+    &Title {
+      font-size: 60px;
+    }
+    &Wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &ImageWrapper {
+      width: 100%;
+      height: auto;
+    }
+
+    &Ethereum {
+      height: 88px;
+      width: 88px;
+      left: 216px;
+      top: -71px;
+    }
+  }
+}
+
+/*@media (max-width: 992px) {
+  .promo {
+    &Title {
+      font-size: 64px;
+    }
+    &Wrapper {
+      grid-template-columns: 100%;
+    }
+
+    &ImageWrapper {
+      width: 100%;
+      height: auto;
+    }
+
+    &Decor {
+      position: absolute;
+      transition: 0s all;
+
+      &:nth-child(1) {
+        height: 88px;
+        width: 88px;
+        left: 516px;
+        top: -110px;
+      }
+    }
+  }
+}*/
+
+
+@media (max-width: 992px) {
+  .promo {
+    //padding: 40px 0;
+    &Title {
+      font-size: 50px;
+    }
+
+    &Wrapper {
+      grid-template-columns: 100%;
+    }
+
+    &ImageWrapper {
+      width: 100%;
+      height: auto;
+    }
+
+    &Ethereum {
+      height: 88px;
+      width: 88px;
+      left: 416px;
+      top: -110px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .promo {
+    // padding: 25px 0;
+
+    &Title {
+      font-size: 11vw;
+      line-height: 1.3;
+    }
+
+    &Ethereum {
+      scale: .7;
+
+      height: 88px;
+      width: 88px;
+      left: 282px;
+      top: -51px;
+    }
+
+    &Bitcoin {
+      scale: .7;
+    }
+
+    &X {
+      scale: .7;
+      bottom: -65px;
+    }
+
+    &Descr {
+      font-size: 17px;
+    }
+
+    &Button {
+      margin-top: 30px;
+    }
+  }
+}

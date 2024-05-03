@@ -1,0 +1,4 @@
+{
+  "extends": ["rtkit", "rtkit/react", "next/core-web-vitals"]
+}
+

@@ -1,0 +1,86 @@
+.header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+
+  transition: var(--transition);
+
+  &Scrolled {
+    background-color: var(--gray-color);
+    border-bottom: var(--border-black) !important;
+    // border-top: var(--border-black);
+
+    .header {
+      &Inner {
+        padding: 15px 0;
+      }
+    }
+  }
+
+  &Logo {
+    position: relative;
+    font-size: 24px;
+  }
+
+  &Navigation {
+    ul {
+      display: flex;
+
+      li {
+        a {
+          padding: 15px 20px;
+
+          &:hover {
+            color: var(--green-color2);
+          }
+
+          .active {
+            color: var(--green-color2);
+          }
+        }
+
+        .active {
+          a {
+            color: var(--green-color2);
+          }
+        }
+      }
+    }
+  }
+
+  &Inner {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: var(--transition);
+  }
+
+  &Button {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  &Burger {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &Navigation, &Button {
+      display: none;
+    }
+
+    &Inner {
+      padding: 20px 0;
+    }
+
+    &Burger {
+      display: flex;
+    }
+  }
+}

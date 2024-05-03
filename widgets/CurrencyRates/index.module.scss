@@ -1,0 +1,43 @@
+@import '@/styles/animation.scss';
+
+.rates {
+  margin-top: 30px;
+
+  &Title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--fz-14);
+    color: var(--text-color-gray);
+  }
+
+  &Message {
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  &Card {
+    margin-top: var(--mt-20);
+    padding: 16px 0;
+    overflow: hidden;
+
+    white-space: nowrap;
+
+
+    // max-height: 109px;
+    div {
+      flex: 0 0 auto;
+    }
+  }
+
+  &Dots {
+    animation: flash 2.2s infinite;
+  }
+}
+
+@media (max-width: 576px) {
+  .rates {
+    &Card {
+      padding: 10px 0;
+    }
+  }
+}

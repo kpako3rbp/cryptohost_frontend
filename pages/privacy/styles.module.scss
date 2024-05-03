@@ -1,0 +1,23 @@
+.terms {
+  &Title {
+    padding: 30px 0 15px;
+    font-weight: bold;
+  }
+
+  p {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .terms {
+    &Title {
+      padding: 20px 0 10px;
+    }
+
+    p {
+      padding: 8px 0;
+      font-size: 15px;
+    }
+  }
+}

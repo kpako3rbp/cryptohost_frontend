@@ -1,0 +1,49 @@
+.postGrid {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 60px;
+
+  &HasMain {
+    div {
+      &:first-child {
+        grid-column: 1 / 4;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .postGrid {
+    grid-template-columns: repeat(2, 1fr);
+
+    &HasMain {
+      div {
+        &:first-child {
+          grid-column: 1 / 3;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .postGrid {
+    grid-template-columns: 100%;
+
+    &HasMain {
+      div {
+        &:first-child {
+          grid-column: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .postGrid {
+    row-gap: 40px;
+  }
+}

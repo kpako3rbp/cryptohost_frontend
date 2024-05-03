@@ -1,0 +1,40 @@
+{
+  "name": "10_cryptohost",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
+    "axios": "^1.6.7",
+    "classnames": "2.3.2",
+    "date-fns": "^3.0.2-rc.1",
+    "locale": "^0.1.0",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "4.4.0",
+    "react-markdown": "^9.0.1",
+    "react-redux": "^8.0.2",
+    "react-slick": "^0.30.2",
+    "react-toastify": "^10.0.4",
+    "ru": "^0.0.2",
+    "slick-carousel": "^1.8.1",
+    "socket.io-client": "^4.7.4",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.9",
+    "eslint": "8.22.0",
+    "eslint-config-next": "14.1.0",
+    "eslint-config-rtkit": "^1.1.0",
+    "sass": "^1.55.0"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
