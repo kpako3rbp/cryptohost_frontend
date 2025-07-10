@@ -40,6 +40,7 @@ const Activities = (props) => {
 
   const { loading, loadData } = useContentLoader(
     'activities',
+    'crypto-activities',
     LOAD_MORE_STEP,
     (count) => dispatch(setLoadedCount(count)),
     (entities) => dispatch(addActivities(entities)),
